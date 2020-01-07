@@ -1,0 +1,37 @@
+[
+  {
+    "profile_image": "https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+    "notication_type": "system",
+    "notification_message": "Welcome to Facebook Jakal",
+    "notification_time": "1 January 2020",
+    "status": "read"
+  },
+  {
+    "profile_image": "https://img.freepik.com/free-vector/businessman-profile-cartoon_18591-58479.jpg?size=338&ext=jpg",
+    "notication_type": "page",
+    "notification_message": "You got 2 new likes in your page Cool Teens",
+    "notification_time": "3 January 2020",
+    "status": "unread"
+  },
+  {
+    "profile_image": "https://img.freepik.com/free-vector/businessman-profile-cartoon_18591-58479.jpg?size=338&ext=jpg",
+    "notication_type": "page",
+    "notification_message": "You got 2 new likes in your page Cool Teens",
+    "notification_time": "3 January 2020",
+    "status": "unread"
+  },
+  {
+    "profile_image": "https://ca-times.brightspotcdn.com/dims4/default/7956ff8/2147483647/strip/true/crop/534x401+0+0/resize/840x631!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdc%2Ff8%2F4dad19a24560946ea7c408c2d7e2%2Ffootball.jpg",
+    "notication_type": "message",
+    "notification_message": "You have been invited to join a Sports group",
+    "notification_time": "2 January 2020",
+    "status": "unread"
+  },
+  {
+    "profile_image": "https://img.freepik.com/free-vector/businessman-profile-cartoon_18591-58479.jpg?size=338&ext=jpg",
+    "notication_type": "page",
+    "notification_message": "You got 5 new likes in your page Cool Teens",
+    "notification_time": "1 January 2020",
+    "status": "read"
+  }
+]
