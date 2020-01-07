@@ -22,16 +22,40 @@
     "date_posted" : "Jan 2 2019",
     "media_path" : "assets/images/china.jpg",
     "people_reacted" : "Chung and  80 reacted to this",
-    "no_of_reactions": "10 commments"
+    "no_of_reactions": "10 commments",
+    "comments" : [
+      {
+        "cprofile_image" : "assets/images/china.jpg",
+        "ctitle": "This is really cool",
+        "cuser_name" : "Jakal List"
+      },
+      {
+        "cprofile_image" : "assets/images/china.jpg",
+        "ctitle": "This is really cool",
+        "cuser_name" : "Jakal List"
+      }
+    ]
 
   },
   {
-    "profile_image" : "assets/images/sunset.jpg",
+    "profile_image": "assets/images/sunset.jpg",
     "title": "This is really cool",
-    "user_name" : "Jakal List",
-    "date_posted" : "Jan 2 2019",
-    "media_path" : "assets/images/china.jpg",
-    "people_reacted" : "Chung and Others liked this",
-    "no_of_reactions": "2 shares"
+    "user_name": "Jakal List",
+    "date_posted": "Jan 2 2019",
+    "media_path": "assets/images/china.jpg",
+    "people_reacted": "Chung and Others liked this",
+    "no_of_reactions": "2 shares",
+    "comments": [
+      {
+        "cprofile_image": "assets/images/china.jpg",
+        "ctitle": "This is really cool",
+        "cuser_name": "Jakal List"
+      },
+      {
+        "cprofile_image": "assets/images/china.jpg",
+        "ctitle": "This is really cool",
+        "cuser_name": "Jakal List"
+      }
+    ]
   }
 ]

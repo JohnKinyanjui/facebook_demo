@@ -1,4 +1,5 @@
 import 'package:fleva_icons/fleva_icons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,7 +14,10 @@ class FacebookCardPost extends StatelessWidget {
   final String nums;
   final String reactions;
 
-  FacebookCardPost({@required this.image_path,@required this.date,@required this.description,@required this.nums,@required this.user_name,@required this.profile_path,@required this.reactions});
+
+  final Widget  child;
+
+  FacebookCardPost({@required this.image_path,@required this.date,@required this.description,@required this.nums,@required this.user_name,@required this.profile_path,@required this.reactions,@required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -172,7 +176,7 @@ class FacebookCardPost extends StatelessWidget {
                   ],
                 ),
           ),
-
+           child
           ],
         ),
       ),

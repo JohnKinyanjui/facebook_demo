@@ -1,5 +1,5 @@
 import 'dart:convert';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -160,7 +160,47 @@ class _FacebookScreenPostState extends State<FacebookScreenPost> {
                                reactions: data[index]['people_reacted'],
                                nums: data[index]['no_of_reactions'],
                                user_name: data[index]['user_name'],
-                               profile_path: data[index]['profile_image'],);
+                               profile_path: data[index]['profile_image'],
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  width: 500,
+                                  decoration: BoxDecoration(
+                                    color: facebook_dgrey_color,
+                                    borderRadius: BorderRadius.only(topRight: Radius.circular(30),topLeft: Radius.circular(30),bottomRight: Radius.circular(30))
+                                  ),
+                                 child: Row(
+                                   mainAxisAlignment: MainAxisAlignment.start,
+                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                   children: <Widget>[
+                                     Padding(
+                                       padding: const EdgeInsets.all(8.0),
+                                       child: Container(
+                                         height: 30,
+                                         width: 30,
+                                         decoration: BoxDecoration(
+                                             shape: BoxShape.circle,
+                                             image: DecorationImage(image: AssetImage(data[index]['comments'][0]['cprofile_image']),fit: BoxFit.cover)
+                                         ),
+                                       ),
+                                     ),
+                                     Padding(
+                                       padding: const EdgeInsets.all(8.0),
+                                       child: Column(
+                                         mainAxisAlignment: MainAxisAlignment.start,
+                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                         children: <Widget>[
+                                           Text(data[index]['comments'][0]['cuser_name'],style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600,color: Colors.grey[600]),),
+                                           Text(data[index]['comments'][0]['ctitle'],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: Colors.black),),
+                                         ],
+                                       ),
+                                     )
+                                   ],
+                                 ),
+                             ),
+                              ),
+
+                           );
                          });
                    }),
            ),
