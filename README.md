@@ -1,6 +1,10 @@
-# json
+# Facebook Demo
 
-A new Flutter application.
+This is a simple facebook demo.The app is created using flutter where date is loaded using  json from offline file.
+What is contained in lib:
+Components Folder - This are custom widgets which are used in the app.
+Screens - this are the tab screens.
+Main folder - this are main widgets which hold tabview and etc.
 
 ## Getting Started
 
