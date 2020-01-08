@@ -1,7 +1,7 @@
 import 'package:fleva_icons/fleva_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:json/constants.dart';
+import 'package:json/main/constants.dart';
 
 class FacebookCardNotification extends StatelessWidget {
   final String ImageData;

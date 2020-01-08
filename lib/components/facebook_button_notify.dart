@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'constants.dart';
+import '../main/constants.dart';
 
 class FacebookButtonNotify extends StatelessWidget {
   final String text;

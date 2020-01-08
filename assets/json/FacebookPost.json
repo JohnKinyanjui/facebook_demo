@@ -1,28 +1,35 @@
 [
   {
-    "profile_image" : "assets/images/china.jpg",
-    "title": "This is really cool",
-    "user_name" : "Jakal List",
+    "profile_image" : "assets/images/josh.jpeg",
+    "title": "This is really cool.The view always amazes me when i look at it.Its really very beatiful.",
+    "user_name" : "Josh Winchester",
     "date_posted" : "Jan 2 2019",
-    "media_path" : "assets/images/china.jpg",
+    "media_path" : "assets/images/pexel.jpeg",
     "people_reacted" : "Jake and 20 others reacted",
     "no_of_reactions": "21 comments",
+    "comments_visible": true,
     "comments" : [
       {
-        "cprofile_image" : "assets/images/china.jpg",
+        "cprofile_image" : "assets/images/kemri.jpg",
         "ctitle": "This is really cool",
-        "cuser_name" : "Jakal List"
+        "cuser_name" : "Kemri Lee"
+      },
+      {
+        "cprofile_image" : "assets/images/sarah.jpg",
+        "ctitle": "Wow",
+        "cuser_name" : "Sarah Wanjiru"
       }
     ]
   },
   {
-    "profile_image" : "assets/images/pexel.jpeg",
-    "title": "This is really cool",
-    "user_name" : "Jakal List",
+    "profile_image" : "assets/images/sarah.jpg",
+    "title": "This is really cool.How do they do it.Its really amazing",
+    "user_name" : "Sarah Wanjiru",
     "date_posted" : "Jan 2 2019",
-    "media_path" : "assets/images/china.jpg",
+    "media_path" : "assets/images/photo.jpg",
     "people_reacted" : "Chung and  80 reacted to this",
     "no_of_reactions": "10 commments",
+    "comments_visible": false,
     "comments" : [
       {
         "cprofile_image" : "assets/images/china.jpg",
@@ -30,7 +37,7 @@
         "cuser_name" : "Jakal List"
       },
       {
-        "cprofile_image" : "assets/images/china.jpg",
+        "cprofile_image" : "assets/images/photo.jpg",
         "ctitle": "This is really cool",
         "cuser_name" : "Jakal List"
       }
@@ -38,18 +45,19 @@
 
   },
   {
-    "profile_image": "assets/images/sunset.jpg",
+    "profile_image": "assets/images/julia.jpg",
     "title": "This is really cool",
-    "user_name": "Jakal List",
+    "user_name": "Kemri Lita",
     "date_posted": "Jan 2 2019",
-    "media_path": "assets/images/china.jpg",
+    "media_path": "assets/images/sunset.jpg",
     "people_reacted": "Chung and Others liked this",
     "no_of_reactions": "2 shares",
+    "comments_visible": true,
     "comments": [
       {
-        "cprofile_image": "assets/images/china.jpg",
+        "cprofile_image": "assets/images/josh.jpeg",
         "ctitle": "This is really cool",
-        "cuser_name": "Jakal List"
+        "cuser_name": "Josh Winchester"
       },
       {
         "cprofile_image": "assets/images/china.jpg",

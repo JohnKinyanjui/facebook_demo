@@ -3,14 +3,15 @@ import 'package:fleva_icons/fleva_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:json/constants.dart';
-import 'package:json/facebook_button_group.dart';
-import 'package:json/facebook_card_group.dart';
-import 'package:json/facebook_card_notification.dart';
-import 'package:json/model_group.dart';
+import 'package:json/main/constants.dart';
+import 'package:json/components/facebook_button_group.dart';
+import 'package:json/components/facebook_card_group.dart';
+import 'package:json/components/facebook_card_group_post.dart';
+import 'package:json/components/facebook_card_notification.dart';
+import 'package:json/models/model_group.dart';
 import 'dart:convert';
-import 'app_bar_icon.dart';
-import 'facebook_card_icon_text.dart';
+import '../components/app_bar_icon.dart';
+import '../components/facebook_card_icon_text.dart';
 
 class FacebookScreenGroups extends StatefulWidget {
   @override
@@ -103,7 +104,6 @@ class _FacebookScreenGroupsState extends State<FacebookScreenGroups> {
               ),
             ),
             Container(
-              height: 500,
               child: FutureBuilder(
                future: DefaultAssetBundle.of(context).loadString('assets/json/group.json'),
 
@@ -111,15 +111,19 @@ class _FacebookScreenGroupsState extends State<FacebookScreenGroups> {
                  var data = json.decode(snapshot.data.toString());
 
                  return ListView.builder(
+                   shrinkWrap: true,
+                   physics: const NeverScrollableScrollPhysics(),
                    itemCount: data.length,
                    itemBuilder: (context, int index){
-                    return  Container(
-                      color: Colors.white,
-                      child: Column(
-                        children: <Widget>[
-                          Text(data[index]['Cool'])
-                        ],
-                      ),
+                    return  FacebookCardGroupPost(
+                        profile_image: data[index]['profile_image'],
+                        username: data[index]['username'],
+                        group_name: data[index]['group_name'],
+                        date_posted: data[index]['date_posted'],
+                        media_path: data[index]['media_path'],
+                        total_reations: data[index]['total_reations'],
+                        reaction_text: data[index]['reaction_text'],
+                        description: data[index]['description'],
                     );
                  },);
               }),

@@ -8,13 +8,14 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:json/app_bar_icon.dart';
-import 'package:json/constants.dart';
-import 'package:json/facebook_screen_groups.dart';
-import 'package:json/facebook_screen_notify.dart';
-import 'package:json/facebook_screen_post.dart';
-import 'facebook_screen_videos.dart';
+import 'package:json/components/app_bar_icon.dart';
+import 'package:json/main/constants.dart';
+import 'package:json/screens/facebook_screen_groups.dart';
+import 'package:json/screens/facebook_screen_notify.dart';
+import 'package:json/screens/facebook_screen_post.dart';
+import 'package:json/screens/facebook_screen_videos.dart';
 import 'facebook_screen_pages.dart';
+import 'facebook_screen_more.dart';
 
 class FacebookHome extends StatefulWidget {
   FacebookHome({Key key}) : super(key: key);
@@ -50,7 +51,7 @@ class _FacebookHomeState extends State<FacebookHome> with SingleTickerProviderSt
     FacebookScreenVideos(),
     FacebookScreenPages(),
     FacebookScreenNotify(),
-     FacebookScreenGroups(),
+    FacebookScreenMore(),
   ];
 
   @override

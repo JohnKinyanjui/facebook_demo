@@ -2,10 +2,10 @@ import 'package:fleva_icons/fleva_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:json/constants.dart';
-import 'package:json/facebook_button_group.dart';
+import 'package:json/main/constants.dart';
+import 'package:json/components/facebook_button_group.dart';
 
-import 'app_bar_icon.dart';
+import '../components/app_bar_icon.dart';
 
 class FacebookScreenPages extends StatefulWidget {
   @override

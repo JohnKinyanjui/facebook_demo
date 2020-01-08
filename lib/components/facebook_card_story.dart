@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:json/constants.dart';
+import 'package:json/main/constants.dart';
 
 class FacebookCardStory extends StatelessWidget {
   final String profile_image;

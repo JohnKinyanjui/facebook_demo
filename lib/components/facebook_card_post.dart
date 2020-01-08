@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:json/constants.dart';
+import 'package:json/main/constants.dart';
 
 class FacebookCardPost extends StatelessWidget {
   final String image_path;
@@ -13,11 +13,12 @@ class FacebookCardPost extends StatelessWidget {
   final String description;
   final String nums;
   final String reactions;
+  final bool comment_visible;
 
 
   final Widget  child;
 
-  FacebookCardPost({@required this.image_path,@required this.date,@required this.description,@required this.nums,@required this.user_name,@required this.profile_path,@required this.reactions,@required this.child});
+  FacebookCardPost({@required this.image_path,@required this.date,@required this.description,@required this.nums,@required this.user_name,@required this.profile_path,@required this.reactions,@required this.child,@required this.comment_visible});
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +101,7 @@ class FacebookCardPost extends StatelessWidget {
                 Positioned(
                   left: 2,
                   child: Padding(
-                  padding: const EdgeInsets.only(left :8.0,top: 8.0),
+                  padding: const EdgeInsets.only(left :8.0,top: 12.0),
                   child: Container(
                     height: 20,
                     width: 20,
@@ -114,7 +115,7 @@ class FacebookCardPost extends StatelessWidget {
                 )),
                 Positioned(
                   left: 15,
-                 child: Padding(padding: const EdgeInsets.only(left :8.0,top: 8.0),
+                 child: Padding(padding: const EdgeInsets.only(left :8.0,top: 12.0),
                   child: Container(
                     height: 20,
                     width: 20,
@@ -128,7 +129,7 @@ class FacebookCardPost extends StatelessWidget {
                 )),
                 Positioned(
                     left: 28,
-                    child: Padding(padding: const EdgeInsets.only(left :8.0,top: 8.0),
+                    child: Padding(padding: const EdgeInsets.only(left :8.0,top: 12.0),
                       child: Container(
                         height: 20,
                         width: 20,
@@ -176,7 +177,9 @@ class FacebookCardPost extends StatelessWidget {
                   ],
                 ),
           ),
-           child
+           Visibility(
+              visible: comment_visible,
+               child: child)
           ],
         ),
       ),

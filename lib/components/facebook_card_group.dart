@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:json/constants.dart';
+import 'package:json/main/constants.dart';
 
 class FacebookCardGroup extends StatelessWidget {
   final Function onTap;

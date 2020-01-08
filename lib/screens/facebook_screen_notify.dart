@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:json/constants.dart';
+import 'package:json/main/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:json/facebook_button_notify.dart';
-import 'package:json/facebook_card_notification.dart';
+import 'package:json/components/facebook_button_notify.dart';
+import 'package:json/components/facebook_card_notification.dart';
 import 'dart:convert';
-import 'app_bar_icon.dart';
+import '../components/app_bar_icon.dart';
 
 class FacebookScreenNotify extends StatefulWidget {
   FacebookScreenNotify({Key key}) : super(key: key);

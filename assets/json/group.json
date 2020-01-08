@@ -1,22 +1,23 @@
 [
   {
-    "groupName": "Jak",
-    "Cool" : "jsk",
-    "dkl" : "kdlw"
+    "profile_image": "assets/images/sarah.jpg",
+    "username" :"Sarah Wanjiru",
+    "group_name": "Farming Group",
+    "date_posted": "1 Jan 2020",
+    "description" : "The soil is very fertile you can grow almost everything in here",
+    "media_path":  "assets/images/pexel.jpeg",
+    "total_reations": "10 shares",
+    "reaction_text": "Josh and 80 like this"
   },
   {
-    "groupName": "Jak",
-    "Cool" : "jsk",
-    "dkl" : "kdlw"
-  },
-  {
-    "groupName": "Jak",
-    "Cool" : "jsk",
-    "dkl" : "kdlw"
-  },
-  {
-    "groupName": "Jak",
-    "Cool" : "jsk",
-    "dkl" : "kdlw"
+    "profile_image": "assets/images/josh.jpeg",
+    "username" :"Josh Winchestet",
+    "group_name": "Cool Page",
+    "date_posted": "2 Jan 2020",
+    "description" : "This is the coolest car i have ever seen in mer life.I want it!!",
+    "media_path":  "assets/images/car1.jpg",
+    "total_reations": "10 shares",
+    "reaction_text": "Kemri and 180 others reacted"
   }
+
 ]

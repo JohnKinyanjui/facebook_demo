@@ -3,12 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:json/constants.dart';
-import 'package:json/facebook_card_icon_text.dart';
-import 'package:json/facebook_card_post.dart';
-import 'package:json/model_story.dart';
-
-import 'facebook_card_story.dart';
+import 'package:json/main/constants.dart';
+import 'package:json/components/facebook_card_icon_text.dart';
+import 'package:json/components/facebook_card_post.dart';
+import 'package:json/models/model_story.dart';
+import '../components/facebook_card_comment.dart';
+import '../components/facebook_card_story.dart';
 
 class FacebookScreenPost extends StatefulWidget {
   FacebookScreenPost({Key key}) : super(key: key);
@@ -73,7 +73,8 @@ class _FacebookScreenPostState extends State<FacebookScreenPost> {
                           width: 60,
                           decoration: BoxDecoration(
                             color: facebook_grey_color,
-                            shape: BoxShape.circle
+                            shape: BoxShape.circle,
+                            image: DecorationImage(image: AssetImage('assets/images/sarah.jpg'),fit: BoxFit.cover)
                           ),
                         ),
                       ),
@@ -84,7 +85,8 @@ class _FacebookScreenPostState extends State<FacebookScreenPost> {
                             height: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(20)),
-                              border: Border.all(color: facebook_dgrey_color, width: 1)
+                              border: Border.all(color: facebook_dgrey_color, width: 1),
+
                             ),
                               child: Padding(
                                 padding: const EdgeInsets.only(left : 22.0),
@@ -161,44 +163,20 @@ class _FacebookScreenPostState extends State<FacebookScreenPost> {
                                nums: data[index]['no_of_reactions'],
                                user_name: data[index]['user_name'],
                                profile_path: data[index]['profile_image'],
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  width: 500,
-                                  decoration: BoxDecoration(
-                                    color: facebook_dgrey_color,
-                                    borderRadius: BorderRadius.only(topRight: Radius.circular(30),topLeft: Radius.circular(30),bottomRight: Radius.circular(30))
-                                  ),
-                                 child: Row(
-                                   mainAxisAlignment: MainAxisAlignment.start,
-                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                   children: <Widget>[
-                                     Padding(
-                                       padding: const EdgeInsets.all(8.0),
-                                       child: Container(
-                                         height: 30,
-                                         width: 30,
-                                         decoration: BoxDecoration(
-                                             shape: BoxShape.circle,
-                                             image: DecorationImage(image: AssetImage(data[index]['comments'][0]['cprofile_image']),fit: BoxFit.cover)
-                                         ),
-                                       ),
-                                     ),
-                                     Padding(
-                                       padding: const EdgeInsets.all(8.0),
-                                       child: Column(
-                                         mainAxisAlignment: MainAxisAlignment.start,
-                                         crossAxisAlignment: CrossAxisAlignment.start,
-                                         children: <Widget>[
-                                           Text(data[index]['comments'][0]['cuser_name'],style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600,color: Colors.grey[600]),),
-                                           Text(data[index]['comments'][0]['ctitle'],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: Colors.black),),
-                                         ],
-                                       ),
-                                     )
-                                   ],
-                                 ),
-                             ),
+                              
+                              child: Column(
+                                children: <Widget>[
+                                  Facebook_Card_Comment(
+                                      comment_username: data[index]['comments'][0]['cuser_name'],
+                                      comment_profile_pic: data[index]['comments'][0]['cprofile_image'],
+                                      comment_text: data[index]['comments'][0]['ctitle']),
+                                  Facebook_Card_Comment(
+                                      comment_username: data[index]['comments'][1]['cuser_name'],
+                                      comment_profile_pic: data[index]['comments'][1]['cprofile_image'],
+                                      comment_text: data[index]['comments'][1]['ctitle']),
+                                ],
                               ),
+                             comment_visible: data[index]['comments_visible'],
 
                            );
                          });
