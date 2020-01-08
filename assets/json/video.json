@@ -1,0 +1,20 @@
+[
+  {
+    "profile_image": "assets/images/josh.jpeg",
+    "title": "This is really cool.The view always amazes me when i look at it.Its really very beatiful.",
+    "user_name": "Josh Winchester",
+    "date_posted": "Jan 2 2019",
+    "media_path": "assets/images/pexel.jpeg",
+    "people_reacted": "21K",
+    "no_of_reactions": "350 Comments - 4.2K Shares - 1.6M Views"
+  },
+  {
+    "profile_image": "assets/images/sarah.jpg",
+    "title": "This is really cool.The fastest car ever.",
+    "user_name": "Sarah Wanjiru",
+    "date_posted": "Jan 3 2019",
+    "media_path": "assets/images/car1.jpg",
+    "people_reacted": "61K",
+    "no_of_reactions": "550 Comments - 4.2K Shares - 1.6M Views"
+  }
+]

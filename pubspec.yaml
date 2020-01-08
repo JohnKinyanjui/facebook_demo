@@ -53,6 +53,7 @@ flutter:
     - assets/json/FacebookPost.json
     - assets/json/notification.json
     - assets/json/group.json
+    - assets/json/video.json
     - assets/emoji/emoji.jpg
     - assets/emoji/emoji1.png
     - assets/emoji/emoji2.png
@@ -68,10 +69,19 @@ flutter:
     - assets/images/kemri.jpg
     - assets/images/sarah.jpg
     - assets/images/car1.jpg
+    - assets/images/bookmarks.png
+    - assets/images/events.png
+    - assets/images/friends.png
+    - assets/images/bookmarks.png
+    - assets/images/memories.png
+    - assets/images/multimedia.png
+    - assets/images/localization.png
+    - assets/images/gaming.png
+    - assets/images/jobs.png
 
 
 
-        # An image asset can refer to one or more resolution-specific "variants", see
+    # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see
